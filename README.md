@@ -2,9 +2,12 @@
 
 An endless road-and-river crosser for the GitHub Universe 2026 badge: hop tile by tile, dodge traffic, ride logs and never dawdle.
 
-| Title | Early Rows | Traffic |
+| Title | Traffic | Splash |
 | --- | --- | --- |
-| ![title](screenshots/title.png) | ![early rows](screenshots/early_rows.png) | ![traffic](screenshots/traffic.png) |
+| ![title](screenshots/title.png) | ![traffic](screenshots/traffic.png) | ![splash](screenshots/splash.png) |
+
+Mona is drawn the way the badge's own apps draw her: white outline, purple
+fur, peach face, two-pixel eyes and tentacles.
 
 ## Install
 
@@ -17,7 +20,7 @@ An endless road-and-river crosser for the GitHub Universe 2026 badge: hop tile b
    ships `patch_menu_icons.py`, which adds that support (with a backup).
 4. Eject the volume. The badge restarts into the menu with a Mona Crossing tile.
 
-No network or extra hardware is needed. Scores are saved under `/state`.
+Scores are saved under `/state`. No network or extra hardware is needed.
 
 ## Controls
 
@@ -40,7 +43,7 @@ The sprites are drawn from pixel maps by `tools/build_sprites.py`
 
 - `tools/build_sprites.py` regenerates the sprite sheets.
 - `tools/badge_harness.py` (with `tools/badge_kit.py` copied to `/state/kit.py`
-  on the badge) drives the game's frame loop on a real badge over `mpremote
+  on the badge) drives the app's frame loop on a real badge over `mpremote
   run`, simulating button presses and saving run-length encoded screenshots
   to `/state/shots`; `tools/rle2png.py` converts them.
 
